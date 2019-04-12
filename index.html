@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SFO Prototype</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <header id="appHeader">
+      <section id="mainHeader">
+        <img src="img/SFO_Logo.svg" alt="SFO Airport Logo" id="logo">
+        <h1 id="title">
+            Helpdesk Services Kiosk
+        </h1>
+      </section>
+      <div class="spacerBar"></div>
+      <section id="subHeader">
+        <h3 id="currentDate"></h3>
+        <h3 id="currentTime"></h3>
+        <h2 id="kioskName">Kiosk Number 17 West</h2>
+      </section>
+    </header>
+    <div id="layoutWrapper">
+      <nav>
+        <section id="navContainer">
+          <div class="navButton" data-button-index="1">
+            <h2 class="navButtonLabel">Make a Call</h1>
+            <img src="img/icon_call.png" alt="" class="navButtonIcon">
+          </div>
+          <div class="navButton" data-button-index="2">
+            <h2 class="navButtonLabel">Sign Language</h1>
+            <img src="img/icon_signlanguage.png" alt="" class="navButtonIcon">
+          </div>
+          <div class="navButton" data-button-index="3">
+            <h2 class="navButtonLabel">TTY Call</h1>
+            <img src="img/icon_tty.png" alt="" class="navButtonIcon">
+          </div>
+          <div class="navButton" data-button-index="4">
+            <h2 class="navButtonLabel">Live Video Support</h1>
+            <img src="img/icon_head.png" alt="" class="navButtonIcon">
+          </div> 
+          <div class="navButton" data-button-index="5">
+            <h2 class="navButtonLabel">Translation</h1>
+            <img src="img/icon_map.png" alt="" class="navButtonIcon">
+          </div>
+        </section>
+      </nav>
+      <main>
+        <section id="mainContainer">
+          <div class="slideOut" data-button-index="1">
+            <div class="slideOutInner">
+              <div class="cutout"></div>
+              <div class="cutin"></div>
+              <div class="gradientWrapper">
+                <ul class="slideOutButtonContainer scrollEnabled">
+                  <li class="slideOutButton">
+                    <span class="slideOutButtonLabel">Direct Dial</span>
+                  </li>
+                  <li class="slideOutButton hasDropdown">
+                    <span class="slideOutButtonLabel">Airlines</span>
+                    <div class="slideOutDropdown">
+                      <ul>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="slideOutButton hasDropdown">
+                    <span class="slideOutButtonLabel">Lodging</span>
+                    <div class="slideOutDropdown">
+                      <ul>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="slideOutButton hasDropdown">
+                    <span class="slideOutButtonLabel">Shuttles</span>
+                    <div class="slideOutDropdown">
+                      <ul>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="slideOutButton hasDropdown">
+                    <span class="slideOutButtonLabel">Link Text</span>
+                    <div class="slideOutDropdown">
+                      <ul>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="slideOutButton hasDropdown">
+                    <span class="slideOutButtonLabel">Link Text2</span>
+                    <div class="slideOutDropdown">
+                      <ul>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                  <li class="slideOutButton hasDropdown">
+                    <span class="slideOutButtonLabel">Link Text3</span>
+                    <div class="slideOutDropdown">
+                      <ul>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="slideOutDropdownContent">
+                            <img src="https://via.placeholder.com/90x90.png?text=Logo" alt="">
+                            <div>
+                              <h3>Link Title</h3>
+                              <p>Link text goes here.  Not too much, but just enough.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="cutout"></div>
+            </div>
+          </div>
+          <div class="slideOut" data-button-index="2">
+            <div class="slideOutInner">
+              <div class="cutout"></div>
+              <div class="cutin"></div>
+              <div class="gradientWrapper">
+                <ul class="slideOutButtonContainer scrollEnabled">
+                  <li class="slideOutButton">
+                    <span class="slideOutButtonLabel">Button Text Goes Here</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cutout"></div>
+            </div>
+          </div>
+          <div class="slideOut" data-button-index="3">
+            <div class="slideOutInner">
+              <div class="cutout"></div>
+              <div class="cutin"></div>
+              <div class="gradientWrapper">
+                <ul class="slideOutButtonContainer scrollEnabled">
+                  <li class="slideOutButton">
+                    <span class="slideOutButtonLabel">Button Text Goes Here, width automatically adjusts to fit content. Even if it's way too much content that stretches off the page...</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cutout"></div>
+            </div>
+          </div>
+          <div class="slideOut" data-button-index="4">
+            <div class="slideOutInner">
+              <div class="cutout"></div>
+              <div class="cutin"></div>
+              <div class="gradientWrapper">
+                <ul class="slideOutButtonContainer scrollEnabled">
+                  <li class="slideOutButton">
+                    <span class="slideOutButtonLabel">Button Text Goes Here</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cutout"></div>
+            </div>
+          </div>
+          <div class="slideOut" data-button-index="5">
+            <div class="slideOutInner">
+              <div class="cutout"></div>
+              <div class="cutin"></div>
+              <div class="gradientWrapper">
+                <ul class="slideOutButtonContainer scrollEnabled">
+                  <li class="slideOutButton">
+                    <span class="slideOutButtonLabel">Button Text Goes Here</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cutout"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
