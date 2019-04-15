@@ -56,6 +56,9 @@ Array.from(document.getElementsByClassName('hasDropdown')).forEach( (element) =>
 			element.classList.remove('active');
 			document.getElementsByClassName('slideOutButtonContainer')[0].classList.add('scrollEnabled');
 		}else{
+			/* scroll the element the or as close as we can get to */
+			/* this should be animated */
+			document.getElementsByClassName('slideOutButtonContainer')[0].scrollTo(element.offsetLeft - element.offsetWidth,0);
 			element.classList.add('active');
 			document.getElementsByClassName('slideOutButtonContainer')[0].classList.remove('scrollEnabled');
 		}
