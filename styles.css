@@ -1,0 +1,77 @@
+:root {
+  --gunmetal: #253031;
+  --greengrey: #315659;
+  --blue: #2978a0;
+  --bone: #e7decd;
+  --ecru: #bcab79;
+  --paleblue: #c6e0ff;
+}
+
+html,
+body {
+  min-height: 100dvh;
+}
+
+body {
+  background: var(--bone);
+  color: var(--gunmetal);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+main ol,
+main ul {
+  text-align: initial;
+}
+
+#rainbow {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--greengrey);
+  width: 100%;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 0.75rem 3rem;
+  font-size: 0.8rem;
+  background-color: var(--gunmetal);
+  color: var(--bone);
+  text-align: center;
+}
+
+#construction {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+#construction h4 {
+  margin: 0;
+}
