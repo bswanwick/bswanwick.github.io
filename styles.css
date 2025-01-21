@@ -7,9 +7,15 @@
   --paleblue: #c6e0ff;
 }
 
-html,
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
-  min-height: 100dvh;
+  overflow: auto;
+  height: 100%;
+  overscroll-behavior: none;
 }
 
 body {
@@ -17,6 +23,7 @@ body {
   color: var(--gunmetal);
   display: flex;
   flex-direction: column;
+  overscroll-behavior: none;
 }
 
 main {
