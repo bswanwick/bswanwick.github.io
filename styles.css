@@ -48,16 +48,9 @@ main ul {
   -webkit-text-fill-color: transparent;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background: var(--greengrey);
-  width: 100%;
-}
-
 footer {
   margin-top: 2rem;
-  padding: 0.75rem 3rem;
+  padding: 0.75rem 0;
   font-size: 0.8rem;
   background-color: var(--gunmetal);
   color: var(--bone);
