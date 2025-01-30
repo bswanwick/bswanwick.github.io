@@ -43,6 +43,7 @@ main ul {
     orange,
     red
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -77,11 +78,37 @@ img {
 
   display: inline-flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 0 2rem 1rem;
 
   min-height: 100lvh;
+}
+
+header menu {
+  text-align: center;
+  background-color: var(--gunmetal);
+  color: var(--bone);
+  padding: 1rem 0;
+  margin: 0;
+}
+header menu ul {
+  margin: 0;
+  padding: 0;
+}
+header menu li {
+  display: inline;
+  margin: 0 1rem;
+}
+header menu li a {
+  color: var(--bone);
+  text-decoration: none;
+  font-family: sans-serif, Arial, Helvetica;
+}
+header menu li a:hover {
+  cursor: pointer;
+  text-decoration: wavy underline overline var(--bone) 1px;
+  transition: text-decoration 0.5s ease-in;
 }
 
 /*#region tablet styles*/
