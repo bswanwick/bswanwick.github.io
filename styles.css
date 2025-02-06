@@ -1,3 +1,17 @@
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.roboto {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 :root {
   --gunmetal: #253031;
   --greengrey: #315659;
@@ -21,6 +35,10 @@ body {
 body {
   background: var(--bone) url("tile.png") repeat left top;
   color: var(--gunmetal);
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 main {
@@ -48,15 +66,6 @@ main ul {
   -webkit-text-fill-color: transparent;
 }
 
-footer {
-  padding: 0.75rem 0;
-  font-size: 0.8rem;
-  background-color: var(--gunmetal);
-  color: var(--bone);
-  text-align: center;
-  border-top: 4px solid var(--ecru);
-}
-
 img {
   max-width: 100%;
 }
@@ -65,6 +74,7 @@ header {
   position: sticky;
   top: 0;
   border-bottom: 4px solid var(--ecru);
+  box-shadow: 2px 0 5px 2px rgba(0, 0, 0, 0.7);
 }
 header menu {
   text-align: center;
@@ -84,13 +94,30 @@ header menu li {
 header menu li a {
   color: var(--bone);
   text-decoration: none;
-  font-family: sans-serif, Arial, Helvetica;
+
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 header menu li a:hover {
   cursor: pointer;
-  text-decoration: wavy underline overline var(--bone) 1px;
+  text-decoration: wavy underline var(--bone) 2px;
   transition: text-decoration 0.5s ease-in;
 }
+
+footer {
+  padding: 0.75rem 0;
+  font-size: 0.8rem;
+  background-color: var(--gunmetal);
+  color: var(--bone);
+  text-align: center;
+  border-top: 4px solid var(--ecru);
+  box-shadow: -2px 0 5px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* **************************************************************** */
 
 #main-content {
   background-color: var(--bone);
@@ -102,8 +129,6 @@ header menu li a:hover {
   padding: 0 2rem 1rem;
 
   min-height: 100lvh;
-
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 #construction {
@@ -119,19 +144,34 @@ header menu li a:hover {
   margin: 0;
 }
 
+#tile {
+  position: absolute;
+  top: calc(35px * 5);
+  left: 0;
+  /* outline: 2px solid pink; */
+}
+
 .paper {
-  background-color: #fefefe;
+  background-color: #f2f0ef;
   color: #333;
   padding: 0 2rem;
-  box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.3);
   width: 90%;
   max-width: 800px;
+
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 .paper > p {
   text-align: left;
   line-height: 1.3;
 }
+
+/* **************************************************************** */
 
 /*#region tablet styles*/
 /* Medium devices such as tablets (1024px or lesser) */
