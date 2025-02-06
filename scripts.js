@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 document.addEventListener("click", (ev) => {
   if (ev.target.id === "tile") {
     const text =
-      "Congratulations to you! You have found a hidden tile. I hope you keep looking for more. I have hidden a few more around the site. Good luck finding them all! If you find all of them, you will be rewarded. Happy gunting!";
+      "Congratulations to you! You have found a hidden tile. I hope you keep looking for more. I have hidden several of them around the site. Good luck unlocking and finding them all! If you do find all of them, I promise that you shall be rewarded. Let the games begin and happy gunting!";
     // alert(`${text} 🎉`);
     say(text);
   } else {
