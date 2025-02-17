@@ -181,6 +181,12 @@ footer {
     max-width: unset;
     padding: 0 1rem;
   }
+
+  #tile {
+    top: 0.5rem;
+    left: 0;
+    z-index: 2;
+  }
 }
 
 /*#endregion tablet styles*/

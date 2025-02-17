@@ -22,7 +22,7 @@ function say(message) {
   if (l > 1) {
     utterance.voice = voices[(Math.random() * l) | 0];
   }
-  utterance.rate = 1.2;
+  utterance.rate = 1.1;
   speechSynthesis.speak(utterance);
 }
 
