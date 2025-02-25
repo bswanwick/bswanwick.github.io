@@ -33,9 +33,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   const elRainbow = document.getElementById("rainbow");
 
-  var tl = new TimelineMax({ repeat: -1 });
+  var tl = new gsap.timeline({
+    repeat: -1,
+  });
+
   tl.to("#rainbow", {
-    backgroundPosition: `${elRainbow.getBoundingClientRect().width}px 0px`,
+    backgroundPosition: `${parseInt(
+      elRainbow.getBoundingClientRect().width
+    )}px 0px`,
     ease: Linear.easeNone,
     duration: 3,
   });
@@ -48,7 +53,7 @@ document.addEventListener("click", (ev) => {
     // alert(`${text} 🎉`);
     say(text);
   } else {
-    var tl = new TimelineMax();
+    var tl = new gsap.timeline();
     tl.to("#tile", {
       rotation: "+=360",
     });
